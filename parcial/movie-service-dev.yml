@@ -3,15 +3,15 @@ server:
 
   datasource:
     driver-class-name: org.h2.Driver
-		url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;
-		username: sa
-		password: sa
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;
+    username: sa
+    password: sa
   sql:
     init:
       data-locations: classpath:movie.sql
   jpa:
     defer-datasource-initialization: true
-		hibernate:
+    hibernate:
       ddl-auto: create-drop
 
 management:
@@ -26,5 +26,5 @@ management:
 info:
   app:
     name: movie-service
-		description: Movie Service for parcial
-		version: 1.0.0
+    description: Movie Service for parcial Nadia Martin Montesi
+    version: 1.0.0

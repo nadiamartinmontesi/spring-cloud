@@ -1,1 +1,17 @@
+server:
+  port: 8084
 
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+info:
+  app:
+    name: catalog-service
+		description: Catalog Service for parcial
+		version: 1.0.0

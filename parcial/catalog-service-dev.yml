@@ -13,5 +13,5 @@ management:
 info:
   app:
     name: catalog-service
-		description: Catalog Service for parcial
-		version: 1.0.0
+    description: Catalog Service for parcial Nadia Martin Montesi
+    version: 1.0.0

@@ -1,0 +1,27 @@
+server:
+  port: 8086
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: root
+      database: serie-final
+      port: 27017
+      host: mongodb
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: Serie Service for final Nadia Martin Montesi
+    version: 1.0.0

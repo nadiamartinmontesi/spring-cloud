@@ -17,3 +17,7 @@ spring:
           uri: http://localhost:8084/
           predicates:
             - Path=/catalogs/**
+        - id: serieRoute
+          uri: http://localhost:8086/
+          predicates:
+            - Path=/series/**

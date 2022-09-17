@@ -9,7 +9,7 @@ spring:
       password: pass
       database: serie-final
       port: 27017
-      host: localhost
+      host: mongodb://localhost
 
 management:
   info:

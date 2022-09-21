@@ -21,3 +21,9 @@ spring:
           uri: http://localhost:8086/
           predicates:
             - Path=/series/**
+
+info:
+  app:
+    name: ${spring.application.name}
+    version: 1.0.0
+    description: API Gateway Final Nadia Martin Montesi

@@ -2,6 +2,10 @@ server:
   port: 8080
 
 spring:
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://eureka-service-final:8761/eureka
   cloud:
     gateway:
       routes:

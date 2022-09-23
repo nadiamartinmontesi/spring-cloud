@@ -10,11 +10,11 @@ spring:
     gateway:
       routes:
         - id: movieRoute
-          uri: lb://movie-service-final
+          uri: lb://movie-service-final-1
           predicates:
             - Path=/movies/**
         - id: catalogRoute
-          uri: http://eureka-service-final:8084/
+          uri: http://catalog-service-final-1:8084/
           predicates:
             - Path=/catalogs/**
         - id: serieRoute

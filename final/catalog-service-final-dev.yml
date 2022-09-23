@@ -1,0 +1,24 @@
+server:
+  port: 8084
+
+spring:
+  spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      database: finalBackCatalog
+      port: 27017
+      host: mongodb
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+
+info:
+  app:
+    name: ${spring.application.name}
+    version: 1.0.0
+    description: Catalog Microservice Final Nadia Martin Montesi

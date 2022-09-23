@@ -2,19 +2,15 @@ server:
   port: 8080
 
 spring:
-  eureka:
-    client:
-      service-url:
-        defaultZone: http://eureka-service-final:8761/eureka
   cloud:
     gateway:
       routes:
         - id: movieRoute
-          uri: lb://movie-service-final-1
+          uri: http://movie-service-final:8082/
           predicates:
             - Path=/movies/**
         - id: catalogRoute
-          uri: http://catalog-service-final-1:8084/
+          uri: http://catalog-service-final:8084/
           predicates:
             - Path=/catalogs/**
         - id: serieRoute

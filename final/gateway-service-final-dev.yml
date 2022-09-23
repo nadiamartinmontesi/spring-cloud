@@ -10,15 +10,15 @@ spring:
     gateway:
       routes:
         - id: movieRoute
-          uri: http://localhost:8082/
+          uri: http://eureka-service-final:8082/
           predicates:
             - Path=/movies/**
         - id: catalogRoute
-          uri: http://localhost:8084/
+          uri: http://eureka-service-final:8084/
           predicates:
             - Path=/catalogs/**
         - id: serieRoute
-          uri: http://localhost:8086/
+          uri: http://eureka-service-final:8086/
           predicates:
             - Path=/series/**
 

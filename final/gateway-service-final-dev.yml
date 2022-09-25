@@ -8,11 +8,11 @@ spring:
         - name: LoggingFilter
       routes:
         - id: movieRoute
-          uri: http://movie-service-final:8082/
+          uri: lb://movie-service-final
           predicates:
             - Path=/movies/**
         - id: catalogRoute
-          uri: http://catalog-service-final:8084/
+          uri: lb://catalog-service-final
           predicates:
             - Path=/catalogs/**
         - id: serieRoute

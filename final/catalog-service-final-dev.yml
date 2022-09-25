@@ -11,11 +11,6 @@ spring:
       port: 27017
       host: mongodb
 
-management:
-  health:
-    circuitbreakers:
-      enabled: true
-
 info:
   app:
     name: ${spring.application.name}

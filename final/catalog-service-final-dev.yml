@@ -2,7 +2,6 @@ server:
   port: 8084
 
 spring:
-  spring:
   data:
     mongodb:
       authentication-database: admin

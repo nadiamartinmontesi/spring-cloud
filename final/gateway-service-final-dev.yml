@@ -12,7 +12,7 @@ spring:
           predicates:
             - Path=/movies/**
         - id: catalogRoute
-          uri: http://catalog-service-final:8082/
+          uri: http://catalog-service-final:8084/
           predicates:
             - Path=/catalogs/**
         - id: serieRoute

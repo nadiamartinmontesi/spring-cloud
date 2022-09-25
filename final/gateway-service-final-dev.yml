@@ -16,7 +16,7 @@ spring:
           predicates:
             - Path=/catalogs/**
         - id: serieRoute
-          uri: http://serie-service-final:8086/
+          uri: lb://serie-service-final
           predicates:
             - Path=/series/**
 

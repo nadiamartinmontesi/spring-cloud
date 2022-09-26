@@ -11,4 +11,7 @@ management:
   info:
     env:
       enabled: true
+  endpoint:
+    info:
+      enabled: true
 

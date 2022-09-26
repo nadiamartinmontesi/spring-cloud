@@ -9,7 +9,7 @@ spring:
       password: rootpass
       database: finalBackSerie
       port: 27018
-      host: mongodb
+      host: mongodb-serie
 
 info:
   app:

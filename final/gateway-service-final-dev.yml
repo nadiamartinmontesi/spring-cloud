@@ -11,10 +11,20 @@ spring:
           uri: lb://movie-service-final
           predicates:
             - Path=/movies/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: movieService
+                fallbackUri: forward:/fallback/movies
         - id: catalogRoute
           uri: lb://catalog-service-final
           predicates:
             - Path=/catalogs/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: catalogService
+                fallbackUri: forward:/fallback/catalogs
         - id: serieRoute
           uri: lb://serie-service-final
           predicates:

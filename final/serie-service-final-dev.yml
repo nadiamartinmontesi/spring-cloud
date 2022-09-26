@@ -8,8 +8,8 @@ spring:
       username: rootuser
       password: rootpass
       database: finalBackSerie
-      port: 27018
-      host: mongodb-serie
+      port: 27017
+      host: mongodb
 
 info:
   app:

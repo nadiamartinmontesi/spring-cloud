@@ -11,8 +11,8 @@ spring:
     password: pass
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-info:
-  app:
-    name: ${spring.application.name}
-    version: 1.0.0
-    description: Movie Microservice Final Nadia Martin Montesi
+#info:
+#  app:
+#    name: ${spring.application.name}
+#    version: 1.0.0
+#    description: Movie Microservice Final Nadia Martin Montesi

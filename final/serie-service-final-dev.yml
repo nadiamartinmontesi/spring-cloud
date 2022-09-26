@@ -11,8 +11,8 @@ spring:
       port: 27017
       host: mongodb
 
-info:
-  app:
-    name: ${spring.application.name}
-    version: 1.0.0
-    description: Serie Microservice Final Nadia Martin Montesi
+#info:
+#  app:
+#    name: ${spring.application.name}
+#    version: 1.0.0
+#    description: Serie Microservice Final Nadia Martin Montesi

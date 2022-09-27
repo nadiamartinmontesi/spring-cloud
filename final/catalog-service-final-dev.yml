@@ -1,0 +1,12 @@
+server:
+  port: 8088
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      database: finalBackCatalog
+      port: 27018
+      host: mongodbCatalog

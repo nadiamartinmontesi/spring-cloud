@@ -9,5 +9,5 @@ spring:
       password: rootpass
       database: finalBackCatalog
       port: 27018
-      host: mongodb
+      host: mongodbCatalog
 

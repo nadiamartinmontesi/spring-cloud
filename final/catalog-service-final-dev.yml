@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8088
 
 spring:
   data:
@@ -8,6 +8,6 @@ spring:
       username: rootuser
       password: rootpass
       database: finalBackCatalog
-      port: 27017
+      port: 27018
       host: mongodb
 
